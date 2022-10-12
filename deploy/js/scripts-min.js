@@ -1,0 +1,1 @@
+!function(a){"use strict";a.gsap.from("#line-1",{duration:1,y:-200,alpha:0}),a.gsap.from("#line-2",{duration:1,y:-100,alpha:0,delay:.5}),a.gsap.from("#pencil-btn",{duration:1,y:200,alpha:0,delay:1})}(gsap);
