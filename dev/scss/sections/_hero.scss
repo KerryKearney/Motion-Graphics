@@ -10,7 +10,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
 
         section{
 
@@ -22,11 +21,13 @@
             }
 
             button{
+                font-family: 'Architects Daughter', cursive;
                 border: none;
                 background-color: var(--yellow);
                 color: var(--blue);
                 padding: 30px 30px;
-                font-size: rem-calc(25);
-            }
+                font-size: rem-calc(45);
         }
+        }
+    }
 }
