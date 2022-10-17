@@ -384,15 +384,16 @@ textarea {
   font-family: "Yusei Magic", sans-serif;
   font-weight: 400;
   font-size: 5.625rem;
+  color: var(--blue);
 }
 #hero #overlay section button {
-  font-family: "Neucha", cursive;
-  font-weight: 400;
+  font-family: "Caveat", cursive;
+  font-weight: 500;
   border: none;
   background-color: var(--yellow);
   color: var(--blue);
   margin-top: 25px;
-  padding: 30px 30px;
+  padding: 15px 30px;
   font-size: 2.8125rem;
   border-radius: 15px;
 }

@@ -18,16 +18,17 @@
                 font-family: 'Yusei Magic', sans-serif;
                 font-weight: 400;
                 font-size: rem-calc(90);
+                color: var(--blue);
             }
 
             button{
-                font-family: 'Neucha', cursive;
-                font-weight: 400;
+                font-family: 'Caveat', cursive;
+                font-weight: 500;
                 border: none;
                 background-color: var(--yellow);
                 color: var(--blue);
                 margin-top: 25px;
-                padding: 30px 30px;
+                padding: 15px 30px;
                 font-size: rem-calc(45);
                 border-radius: 15px;
         }
