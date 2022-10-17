@@ -2,7 +2,14 @@
     background-image: url("../img/hero.jpg");
     background-size: cover;
     background-position: center bottom;
-    height: 100vh;
+
+    @include sm{
+        height: 70vh;
+    }
+
+    @include md{
+        height: 100vh;
+    }
 
     #overlay{
         background-color: rgba(var(--black0),0.65);
@@ -17,8 +24,15 @@
             h1{
                 font-family: 'Yusei Magic', sans-serif;
                 font-weight: 400;
-                font-size: rem-calc(90);
                 color: var(--blue);
+
+                @include sm{
+                    font-size: rem-calc(35);
+                }
+
+                @include md{
+                    font-size: rem-calc(90);
+                }
             }
 
             button{
@@ -29,9 +43,16 @@
                 color: var(--blue);
                 margin-top: 25px;
                 padding: 15px 30px;
-                font-size: rem-calc(45);
                 border-radius: 15px;
-        }
+
+                @include sm{
+                    font-size: rem-calc(20);
+                }
+
+                @include md{
+                    font-size: rem-calc(45);
+                }
+            }
         }
     }
 }

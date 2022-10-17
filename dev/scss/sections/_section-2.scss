@@ -1,15 +1,31 @@
 #section-2{
-    height: 100vh;
     display: flex;
     justify-content: center;
+
+    @include sm{
+        height: 70vh;
+    }
+
+    @include md{
+        height: 100vh;
+    }
 
     #bg-img{
         background-image: url("../img/blank.jpg");
         background-size: cover;
         background-position: center bottom;
-        height: 70%;
-        width: 70%;
         position: absolute;
+        z-index: -1;
+
+        @include sm{
+            height: 30%;
+            width: 100%;
+        }
+    
+        @include md{
+            height: 70%;
+            width: 80%;
+        }
     }
 
     h1{

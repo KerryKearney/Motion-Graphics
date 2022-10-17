@@ -371,7 +371,16 @@ textarea {
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center bottom;
-  height: 100vh;
+}
+@media (min-width: 576px) {
+  #hero {
+    height: 70vh;
+  }
+}
+@media (min-width: 768px) {
+  #hero {
+    height: 100vh;
+  }
 }
 #hero #overlay {
   background-color: rgba(var(--black0), 0.65);
@@ -383,8 +392,17 @@ textarea {
 #hero #overlay section h1 {
   font-family: "Yusei Magic", sans-serif;
   font-weight: 400;
-  font-size: 5.625rem;
   color: var(--blue);
+}
+@media (min-width: 576px) {
+  #hero #overlay section h1 {
+    font-size: 2.1875rem;
+  }
+}
+@media (min-width: 768px) {
+  #hero #overlay section h1 {
+    font-size: 5.625rem;
+  }
 }
 #hero #overlay section button {
   font-family: "Caveat", cursive;
@@ -394,43 +412,109 @@ textarea {
   color: var(--blue);
   margin-top: 25px;
   padding: 15px 30px;
-  font-size: 2.8125rem;
   border-radius: 15px;
+}
+@media (min-width: 576px) {
+  #hero #overlay section button {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+  #hero #overlay section button {
+    font-size: 2.8125rem;
+  }
 }
 
 #section-1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   flex-direction: column;
   margin: 0% 15% 0% 15%;
+}
+@media (min-width: 576px) {
+  #section-1 {
+    height: 70vh;
+  }
+}
+@media (min-width: 768px) {
+  #section-1 {
+    height: 100vh;
+  }
 }
 #section-1 #definition {
   text-align: left;
   margin-bottom: 25px;
   font-family: "Yusei Magic", sans-serif;
   font-weight: 400;
-  font-size: 3.125rem;
+}
+@media (min-width: 576px) {
+  #section-1 #definition {
+    font-size: 1.5625rem;
+  }
+}
+@media (min-width: 768px) {
+  #section-1 #definition {
+    font-size: 3.125rem;
+  }
+}
+@media (min-width: 1024px) {
+  #section-1 #definition {
+    font-size: 4.375rem;
+  }
 }
 #section-1 #body {
   text-align: justify;
   font-family: "Neucha", cursive;
-  font-size: 1.25rem;
+}
+@media (min-width: 576px) {
+  #section-1 #body {
+    font-size: 0.9375rem;
+  }
+}
+@media (min-width: 768px) {
+  #section-1 #body {
+    font-size: 1.5625rem;
+  }
+}
+@media (min-width: 1024px) {
+  #section-1 #body {
+    font-size: 2.1875rem;
+  }
 }
 
 #section-2 {
-  height: 100vh;
   display: flex;
   justify-content: center;
+}
+@media (min-width: 576px) {
+  #section-2 {
+    height: 70vh;
+  }
+}
+@media (min-width: 768px) {
+  #section-2 {
+    height: 100vh;
+  }
 }
 #section-2 #bg-img {
   background-image: url("../img/blank.jpg");
   background-size: cover;
   background-position: center bottom;
-  height: 70%;
-  width: 70%;
   position: absolute;
+  z-index: -1;
+}
+@media (min-width: 576px) {
+  #section-2 #bg-img {
+    height: 30%;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  #section-2 #bg-img {
+    height: 70%;
+    width: 80%;
+  }
 }
 #section-2 h1 {
   text-align: left;

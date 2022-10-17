@@ -20,5 +20,10 @@ function heroanimation(){
     return tl;
 }
 
+function whatisart(){
+    var tl = gsap.timeline({ScrollTrigger:{trigger:"#section-1", markers: true, start:"top 80%", end:"top 40%" }})
+
+}
+
 var mainTL = gsap.timeline();
 mainTL.add(heroanimation());
