@@ -21,12 +21,15 @@
             }
 
             button{
-                font-family: 'Architects Daughter', cursive;
+                font-family: 'Neucha', cursive;
+                font-weight: 400;
                 border: none;
                 background-color: var(--yellow);
                 color: var(--blue);
+                margin-top: 25px;
                 padding: 30px 30px;
                 font-size: rem-calc(45);
+                border-radius: 15px;
         }
         }
     }

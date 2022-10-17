@@ -4,13 +4,19 @@
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    margin: 0% 15% 0% 15%;
 
-    #header{
+    #definition{
+        text-align: left;
         margin-bottom: 25px;
+        font-family: 'Yusei Magic', sans-serif;
+        font-weight: 400;
+        font-size: rem-calc(50);
     }
 
     #body{
-        margin: 0% 15% 0% 15%;
         text-align: justify;
+        font-family: 'Neucha', cursive;
+        font-size: rem-calc(20);
     }
 }

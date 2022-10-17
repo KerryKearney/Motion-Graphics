@@ -13,9 +13,9 @@ html {
 :root {
   --white: #fff;
   --black: #000;
-  --orange: 191,123,52;
-  --yellow: 225,203,81;
-  --blue: 34,51,79;
+  --orange: #B66A2F;
+  --yellow: #EED878;
+  --blue: #2D557C;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -386,12 +386,15 @@ textarea {
   font-size: 5.625rem;
 }
 #hero #overlay section button {
-  font-family: "Architects Daughter", cursive;
+  font-family: "Neucha", cursive;
+  font-weight: 400;
   border: none;
   background-color: var(--yellow);
   color: var(--blue);
+  margin-top: 25px;
   padding: 30px 30px;
   font-size: 2.8125rem;
+  border-radius: 15px;
 }
 
 #section-1 {
@@ -400,31 +403,37 @@ textarea {
   align-items: center;
   height: 100vh;
   flex-direction: column;
+  margin: 0% 15% 0% 15%;
 }
-#section-1 #header {
+#section-1 #definition {
+  text-align: left;
   margin-bottom: 25px;
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  font-size: 3.125rem;
 }
 #section-1 #body {
-  margin: 0% 15% 0% 15%;
   text-align: justify;
+  font-family: "Neucha", cursive;
+  font-size: 1.25rem;
 }
 
 #section-2 {
   height: 100vh;
   display: flex;
   justify-content: center;
-  justify-content: center;
-  position: relative;
 }
 #section-2 #bg-img {
-  background-image: url("/deploy/img/blank.jpg");
+  background-image: url("../img/blank.jpg");
   background-size: cover;
-  background-position: bottom;
-  height: 100%;
-  width: 100%;
+  background-position: center bottom;
+  height: 70%;
+  width: 70%;
   position: absolute;
 }
-
+#section-2 h1 {
+  text-align: left;
+}
 #section-3 {
   height: 100vh;
   display: flex;
