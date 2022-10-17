@@ -1,7 +1,16 @@
 #section-1{
-    background-color: var(--aqua);
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    flex-direction: column;
+
+    #header{
+        margin-bottom: 25px;
+    }
+
+    #body{
+        margin: 0% 15% 0% 15%;
+        text-align: justify;
+    }
 }

@@ -92,6 +92,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted; /* 2 */
 }
 
@@ -371,7 +372,7 @@ textarea {
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center bottom;
-  height: 100vh;
+  height: 80vh;
 }
 #hero #overlay {
   background-color: rgba(var(--black0), 0.65);
@@ -386,48 +387,9 @@ textarea {
   font-size: 5.625rem;
 }
 #hero #overlay section button {
-  font-family: "Architects Daughter", cursive;
   border: none;
   background-color: var(--yellow);
   color: var(--blue);
   padding: 30px 30px;
-  font-size: 2.8125rem;
-}
-
-#section-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-}
-#section-1 #header {
-  margin-bottom: 25px;
-}
-#section-1 #body {
-  margin: 0% 15% 0% 15%;
-  text-align: justify;
-}
-
-#section-2 {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  justify-content: center;
-  position: relative;
-}
-#section-2 #bg-img {
-  background-image: url("/deploy/img/blank.jpg");
-  background-size: cover;
-  background-position: bottom;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-#section-3 {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 1.5625rem;
 }

@@ -1,7 +1,16 @@
 #section-2{
-    background-color: var(--aqua);
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    #bg-img{
+        background-image: url("/deploy/img/blank.jpg");
+        background-size: cover;
+        background-position: bottom;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
 }
