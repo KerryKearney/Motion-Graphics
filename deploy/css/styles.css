@@ -505,11 +505,6 @@ textarea {
     font-size: 3.125rem;
   }
 }
-@media (min-width: 1024px) {
-  #section-1 #definition {
-    font-size: 4.375rem;
-  }
-}
 #section-1 #body {
   text-align: justify;
   font-family: "Neucha", cursive;
@@ -521,12 +516,7 @@ textarea {
 }
 @media (min-width: 768px) {
   #section-1 #body {
-    font-size: 1.5625rem;
-  }
-}
-@media (min-width: 1024px) {
-  #section-1 #body {
-    font-size: 2.1875rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -565,10 +555,7 @@ textarea {
 }
 #section-2 h1 {
   text-align: left;
-}
-#section-3 {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  color: var(--blue);
 }
