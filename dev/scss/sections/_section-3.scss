@@ -17,8 +17,9 @@
 
         .resource-grid{
             display: grid;
+            gap: .125rem;
             grid-template-columns: 1fr 1fr 1fr;
-        
+                // repeat(auto-fit, minmax(15rem, 1fr))
 
             .card{
                 aspect-ratio: 1/1.5;

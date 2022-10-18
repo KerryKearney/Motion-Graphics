@@ -571,6 +571,7 @@ textarea {
 }
 #section-3 .container .resource-grid {
   display: grid;
+  gap: 0.125rem;
   grid-template-columns: 1fr 1fr 1fr;
 }
 #section-3 .container .resource-grid .card {
