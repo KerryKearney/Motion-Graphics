@@ -19,44 +19,15 @@ function heroanimation(){
     return tl;
 }
 
-function whatisart(){
-    var tl = gsap.timeline();
+function section1animation(){
+    var tl = gsap.timeline({scrollTrigger: {trigger:"#section-1", scrub:true, markers:true, end:"top 20%", start:"top 30%"}});
 
-    tl.from("#definition", {
-        duration:1,
-        y:-200,
-        alpha:0,
+    tl.from("#definition", {duration:5, x:50, alpha:0});
 
-        scrollTrigger: {
-            trigger: "#definition",
-            markers:true,
-            start: "0px 20%",
-            end: "100% 10%"
-        }
-    })
-    return tl;
-}
-
-function bodyanimation(){
-    var tl = gsap.timeline();
-
-    tl.from("#body", {
-        duration:1,
-        y:-200,
-        alpha:0,
-
-        scrollTrigger: {
-            trigger: "#body",
-            markers:false,
-            start: "0px 20%",
-            end: "100% 10%"
-        }
-    })
     return tl;
 }
 
 
 var mainTL = gsap.timeline();
 mainTL.add(heroanimation())
-    .add(whatisart())
-    .add(bodyanimation());
+    .add(section1animation())
