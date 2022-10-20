@@ -494,6 +494,7 @@ textarea {
   margin-bottom: 25px;
   font-family: "Yusei Magic", sans-serif;
   font-weight: 400;
+  color: var(--blue);
 }
 @media (min-width: 576px) {
   #section-1 #definition {
@@ -523,6 +524,9 @@ textarea {
 #section-2 {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0% 15% 5% 15%;
 }
 @media (min-width: 576px) {
   #section-2 {
@@ -534,30 +538,40 @@ textarea {
     height: 100vh;
   }
 }
-#section-2 #bg-img {
-  background-image: url("../img/blank.jpg");
-  background-size: cover;
-  background-position: center bottom;
-  position: absolute;
-  z-index: -1;
-}
-@media (min-width: 576px) {
-  #section-2 #bg-img {
-    height: 30%;
-    width: 100%;
-  }
-}
-@media (min-width: 768px) {
-  #section-2 #bg-img {
-    height: 70%;
-    width: 80%;
-  }
-}
-#section-2 h1 {
+#section-2 .phrase-1 {
   text-align: left;
   font-family: "Yusei Magic", sans-serif;
   font-weight: 400;
   color: var(--blue);
+  margin: 0.5rem 0.5rem 2rem;
+  padding: 8rem 3rem;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.5);
+}
+#section-2 .phrase-2 {
+  text-align: left;
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  color: var(--blue);
+}
+#section-2 button {
+  font-family: "Caveat", cursive;
+  font-weight: 500;
+  border: none;
+  background-color: var(--yellow);
+  color: var(--blue);
+  margin-top: 15px;
+  padding: 15px 30px;
+  border-radius: 15px;
+}
+@media (min-width: 576px) {
+  #section-2 button {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+  #section-2 button {
+    font-size: 2.8125rem;
+  }
 }
 
 #section-3 img {

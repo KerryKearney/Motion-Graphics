@@ -1,6 +1,9 @@
 #section-2{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0% 15% 5% 15%;
 
     @include sm{
         height: 70vh;
@@ -10,36 +13,75 @@
         height: 100vh;
     }
 
-    #bg-img{
-        background-image: url("../img/blank.jpg");
-        background-size: cover;
-        background-position: center bottom;
-        position: absolute;
-        z-index: -1;
-
-        @include sm{
-            height: 30%;
-            width: 100%;
-        }
-    
-        @include md{
-            height: 70%;
-            width: 80%;
-        }
-    }
-
-    h1{
+    .phrase-1{
         text-align: left;
         font-family: 'Yusei Magic', sans-serif;
         font-weight: 400;
         color: var(--blue);
-
-        // #phrase-1{
-
-        // }
-
-        // #phrase-2{
-
-        // }
+        margin: .5rem .5rem 2rem;
+        padding: 8rem 3rem;
+        box-shadow: 0 .25rem 1rem rgb(0 0 0 / .5);
     }
+
+    .phrase-2{
+        text-align: left;
+        font-family: 'Yusei Magic', sans-serif;
+        font-weight: 400;
+        color: var(--blue);
+    }
+
+    button{
+        font-family: 'Caveat', cursive;
+        font-weight: 500;
+        border: none;
+        background-color: var(--yellow);
+        color: var(--blue);
+        margin-top: 15px;
+        padding: 15px 30px;
+        border-radius: 15px;
+
+        @include sm{
+            font-size: rem-calc(20);
+        }
+
+        @include md{
+            font-size: rem-calc(45);
+        }
+    }
+
+
+    // #bg-img{
+    //     background-image: url("../img/blank.jpg");
+    //     background-size: cover;
+    //     background-position: center bottom;
+    //     position: absolute;
+    //     z-index: -1;
+
+    //     @include sm{
+    //         height: 30%;
+    //         width: 100%;
+    //     }
+    
+    //     @include md{
+    //         height: 70%;
+    //         width: 80%;
+    //     }
+    // }
+
+    // h1{
+    //     text-align: left;
+    //     font-family: 'Yusei Magic', sans-serif;
+    //     font-weight: 400;
+    //     color: var(--blue);
+
+    //     .phrase-1{
+    //         padding: 5rem;
+    //         box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);
+    //         border-color: aqua;
+    //     }
+
+    //     .phrase-2{
+
+    //     }
+    // }
 }
