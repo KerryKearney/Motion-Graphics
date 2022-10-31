@@ -1,12 +1,11 @@
-<svg width="1264" height="611" viewBox="0 0 1264 611" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="line-animation">
-<rect width="1264" height="611" fill="white"/>
-<line id="center-line" x1="232" y1="303.5" x2="1032" y2="303.5" stroke="black" stroke-width="3"/>
-<circle id="left-ball" cx="197" cy="305" r="35" fill="black"/>
-<circle id="right-ball" cx="1067" cy="305" r="33.5" fill="white" stroke="black" stroke-width="3"/>
-<circle id="center-outline" cx="632" cy="305" r="152.5" fill="white" stroke="black" stroke-width="3"/>
-<circle id="center" cx="632" cy="305" r="130" fill="black"/>
-<rect id="top-clip" x="496" y="25" width="273" height="277" fill="#33FF00"/>
-<rect id="bottom-clip" x="465" y="305" width="329" height="168" fill="#2AB508"/>
+<svg width="700" height="500" viewBox="0 0 700 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Line-Animation">
+<rect width="700" height="500" fill="white"/>
+<circle id="C1" cx="163" cy="254" r="18" fill="#57DDDD"/>
+<circle id="C2" cx="245" cy="254" r="29" fill="#42ACAC"/>
+<circle id="C3" cx="349.5" cy="249.5" r="40.5" fill="#297070"/>
+<circle id="C4" r="29" transform="matrix(-1 0 0 1 454 254)" fill="#42ACAC"/>
+<circle id="C5" r="18" transform="matrix(-1 0 0 1 536 254)" fill="#57DDDD"/>
+<path id="Curves" d="M121 252C121 315 198 314 198 252C198 182 294 173 294 252C294 331 408 330 408 252C408 174 502 182 502 252C502 312 575 315 575 252" stroke="#297070"/>
 </g>
 </svg>

@@ -1,27 +1,9 @@
-<svg width="1264" height="611" viewBox="0 0 1264 611" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="pattern-animation">
-<rect width="1264" height="611" fill="white"/>
-<rect id="line-1" x="408.5" y="82.5" width="447" height="447" stroke="black" stroke-width="3"/>
-<rect id="line-2" x="418.5" y="92.5" width="427" height="427" stroke="black" stroke-width="3"/>
-<rect id="line-3" x="428.5" y="102.5" width="407" height="407" stroke="black" stroke-width="3"/>
-<rect id="line-4" x="438.5" y="112.5" width="387" height="387" stroke="black" stroke-width="3"/>
-<rect id="line-5" x="448.5" y="122.5" width="367" height="367" stroke="black" stroke-width="3"/>
-<rect id="line-6" x="458.5" y="132.5" width="347" height="347" stroke="black" stroke-width="3"/>
-<rect id="line-7" x="468.5" y="142.5" width="327" height="327" stroke="black" stroke-width="3"/>
-<rect id="line-8" x="478.5" y="152.5" width="307" height="307" stroke="black" stroke-width="3"/>
-<rect id="line-9" x="488.5" y="162.5" width="287" height="287" stroke="black" stroke-width="3"/>
-<rect id="line-10" x="498.5" y="172.5" width="267" height="267" stroke="black" stroke-width="3"/>
-<rect id="line-11" x="508.5" y="182.5" width="247" height="247" stroke="black" stroke-width="3"/>
-<rect id="line-12" x="518.5" y="192.5" width="227" height="227" stroke="black" stroke-width="3"/>
-<rect id="line-12_2" x="528.5" y="202.5" width="207" height="207" stroke="black" stroke-width="3"/>
-<rect id="line-13" x="538.5" y="212.5" width="187" height="187" stroke="black" stroke-width="3"/>
-<rect id="line-14" x="548.5" y="222.5" width="167" height="167" stroke="black" stroke-width="3"/>
-<rect id="line-15" x="558.5" y="232.5" width="147" height="147" stroke="black" stroke-width="3"/>
-<rect id="line-16" x="568.5" y="242.5" width="127" height="127" stroke="black" stroke-width="3"/>
-<rect id="line-17" x="578.5" y="252.5" width="107" height="107" stroke="black" stroke-width="3"/>
-<rect id="line-18" x="588.5" y="262.5" width="87" height="87" stroke="black" stroke-width="3"/>
-<rect id="line-19" x="598.5" y="272.5" width="67" height="67" stroke="black" stroke-width="3"/>
-<rect id="line-20" x="608.5" y="282.5" width="47" height="47" stroke="black" stroke-width="3"/>
-<rect id="line-21" x="618.5" y="292.5" width="27" height="27" stroke="black" stroke-width="3"/>
-</g>
+<svg width="700" height="500" viewBox="0 0 700 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="700" height="500" fill="white"/>
+<path d="M349.5 54.618L393.141 188.933L393.254 189.278H393.617H534.844L420.589 272.289L420.295 272.503L420.407 272.848L464.049 407.163L349.794 324.152L349.5 323.938L349.206 324.152L234.951 407.163L278.593 272.848L278.705 272.503L278.411 272.289L164.156 189.278H305.383H305.746L305.859 188.933L349.5 54.618Z" stroke="black"/>
+<path d="M350 84.618L387.018 198.549L387.131 198.894H387.494H507.288L410.372 269.307L410.079 269.521L410.191 269.866L447.209 383.797L350.294 313.384L350 313.17L349.706 313.384L252.791 383.797L289.809 269.866L289.921 269.521L289.628 269.307L192.712 198.894H312.506H312.869L312.982 198.549L350 84.618Z" stroke="black"/>
+<path d="M350 116.618L379.834 208.437L379.946 208.783H380.309L476.854 208.783L398.748 265.53L398.454 265.744L398.566 266.089L428.4 357.908L350.294 301.161L350 300.947L349.706 301.161L271.6 357.908L301.434 266.089L301.546 265.744L301.252 265.53L223.146 208.783L319.691 208.783H320.054L320.166 208.437L350 116.618Z" stroke="black"/>
+<path d="M349.5 147.618L372.262 217.671L372.374 218.017H372.737H446.396L386.805 261.312L386.511 261.526L386.623 261.871L409.385 331.924L349.794 288.629L349.5 288.415L349.206 288.629L289.615 331.924L312.377 261.871L312.489 261.526L312.195 261.312L252.604 218.017H326.263H326.626L326.738 217.671L349.5 147.618Z" stroke="black"/>
+<path d="M350 180.618L365.465 228.214L365.577 228.56H365.94H415.986L375.498 257.976L375.204 258.189L375.317 258.535L390.782 306.131L350.294 276.715L350 276.502L349.706 276.715L309.218 306.131L324.683 258.535L324.796 258.189L324.502 257.976L284.014 228.56H334.06H334.423L334.535 228.214L350 180.618Z" stroke="black"/>
+<path d="M350 209.618L358.954 237.176L359.066 237.521H359.43H388.406L364.964 254.553L364.67 254.766L364.782 255.112L373.736 282.67L350.294 265.638L350 265.425L349.706 265.638L326.264 282.67L335.218 255.112L335.33 254.766L335.036 254.553L311.594 237.521H340.57H340.934L341.046 237.176L350 209.618Z" stroke="black"/>
 </svg>
