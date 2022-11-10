@@ -352,16 +352,50 @@ template {
 /* =============
     Base
 ============= */
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-areas: ". grid-content .";
+  grid-template-columns: 15px auto 15px;
+  height: 100vh;
+}
+@media (min-width: 1200px) {
+  .container-grid {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+.container-grid > div {
+  grid-area: grid-content;
+}
+
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
-button {
-  border: none;
-}
-
 /* =============
     Forms
 ============= */
@@ -386,11 +420,19 @@ textarea {
 /* =============
     Header
 ============= */
-header {
-  color: red;
-  font-size: 0.75rem;
-}
-
 /* =============
     Footer
 ============= */
+#logo {
+  display: grid;
+  grid-template-columns: auto 50% auto;
+  grid-template-areas: ". . ." ". logo ." ". . .";
+  grid-template-rows: 20% auto 20%;
+  height: 100vh;
+}
+#logo > div {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
