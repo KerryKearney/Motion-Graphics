@@ -5,20 +5,22 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
 gsap.registerPlugin(GSDevTools, DrawSVGPlugin, MotionPathPlugin);
 
+gsap.set("#dot1", {transformOrigin: "center"});
+
 function uhMotion(){
         var tl = gsap.timeline()
 
         // draw u
-        tl.from("#uhlive-u", {duration:0.5, drawSVG: 0})
+        tl.from("#uhlive-u", {duration:0.5, drawSVG: "0"})
 
         // draw h stem
-        // .from("#uhlive-h-stem", {duration:0.5, x:"0%"})
+        .from("#uhlive-h-stem", {duration:0.5, drawSVG: "0"})
 
         // draw h shoulder
 
 
         // dots scale up, then retract
-
+        .from("#dot1", {duration:0.5 , scale:0})
 
         return tl;
 
