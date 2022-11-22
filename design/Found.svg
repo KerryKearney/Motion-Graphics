@@ -6,8 +6,8 @@
 <rect id="uhlive-v-base" x="497" y="293.222" width="29" height="29" fill="black"/>
 <path id="uhlive-v-left" d="M461 235.222L496 235.222L526 322.222L497 322.222L461 235.222Z" fill="black"/>
 <path id="uhlive-v-right" d="M561.644 235.443L526.644 235.443L497 322.5L525.644 322.443L561.644 235.443Z" fill="black"/>
-<path id="uhlive-i" d="M427 322H456V235H427V322Z" fill="black"/>
-<path id="uhlive-l" d="M387 285H417V199H387V285Z" fill="black"/>
+<path id="uhlive-i" d="M442 321.5L442 235" stroke="black" stroke-width="30"/>
+<path id="uhlive-l" d="M402 285L402 198.5" stroke="black" stroke-width="30"/>
 <path id="uhlive-h-shoulder" d="M342.5 236C332.488 236 324 238 319 244V272.5C319 263 326.5 263 331 263C335.5 263 342.5 264.5 342.5 272.5V320.5H375V267.5C375 246 354 236 342.5 236Z" fill="black"/>
 <path id="h-mask" d="M320 223.5V276H335.5V332H384V223.5H320Z" fill="#22FF53"/>
 <path id="uhlive-h-stem" d="M305 322L305 204" stroke="black" stroke-width="30" stroke-miterlimit="1"/>
