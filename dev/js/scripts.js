@@ -22,7 +22,7 @@ function uhMotion(){
         .from("#uhlive-h-stem", {duration:0.5 , drawSVG: "0"})
 
         // draw h shoulder
-
+        .from("#uhlive-h-shoulder", {duration:0.5 , drawSVG: "0"})
 
         // dots scale up, then retract
         .from("#dot1", {duration:0.25 , scale:0}, "dotsAnimation")
@@ -48,6 +48,7 @@ function liveMotion(){
         .from("#uhlive-i", {duration:0.5 , drawSVG:"0"}, "liveAnimation")
 
         // unfold v
+        .fromTo("#uhlive-v-base", {duration:0.0001, alpha:0}, {alpha:1}, "liveAnimation")
 
         // scale up e
         .from("#uhlive-e", {duration:0.5 , scale:0}, "liveAnimation")
@@ -63,16 +64,38 @@ function subtitleMotion(){
         var tl = gsap.timeline()
 
         // fade-in
-
-
+        tl.from("#understanding-u", {duration:0.5 , alpha:0, y:"-10"}, "fadeIn")
+        .from("#understanding-n1", {duration:0.5 , alpha:0, y:"-10"}, "fadeIn")
+        .from("#understanding-d1", {duration:0.5 , alpha:0, y:"-10"}, "fadeIn")
+ 
         // type in
-
+        .from("#understanding-e", {duration:0.125 , alpha:0})
+        .from("#understanding-r", {duration:0.125 , alpha:0})
+        .from("#understanding-s", {duration:0.125 , alpha:0})
+        .from("#understanding-t", {duration:0.125 , alpha:0})
+        .from("#understanding-a", {duration:0.125 , alpha:0})
+        .from("#understanding-n2", {duration:0.125 , alpha:0})
+        .from("#understanding-d2", {duration:0.125 , alpha:0})
+        .from("#understanding-i", {duration:0.125 , alpha:0})
+        .from("#understanding-n3", {duration:0.125 , alpha:0})
+        .from("#understanding-g", {duration:0.125 , alpha:0})
+        .from("#humans-h", {duration:0.125 , alpha:0})
+        .from("#humans-u", {duration:0.125 , alpha:0})
+        .from("#humans-m", {duration:0.125 , alpha:0})
+        .from("#humans-a", {duration:0.125 , alpha:0})
+        .from("#humans-n", {duration:0.125 , alpha:0})
+        .from("#humans-s", {duration:0.125 , alpha:0})
 
         // lengthen line
+        .from("#dash", {duration:0.25, drawSVG: 0})
 
 
         // live! type in
-
+        .from("#live-l", {duration:0.125 , alpha:0})
+        .from("#live-i", {duration:0.125 , alpha:0})
+        .from("#live-v", {duration:0.125 , alpha:0})
+        .from("#live-e", {duration:0.125 , alpha:0})
+        .from("#live-exclamation", {duration:0.125 , alpha:0})
 
         return tl;
 }
