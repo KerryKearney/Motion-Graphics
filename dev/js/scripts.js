@@ -48,7 +48,9 @@ function liveMotion(){
         .from("#uhlive-i", {duration:0.5 , drawSVG:"0"}, "liveAnimation")
 
         // unfold v
-        .fromTo("#uhlive-v-base", {duration:0.0001, alpha:0}, {alpha:1}, "liveAnimation")
+        .fromTo("#uhlive-v-base", {duration:0.1, alpha:0}, {alpha:1}, "liveAnimation")
+        .fromTo("#uhlive-v-right", {duration:0.5 , drawSVG:"0"}, {drawSVG:"100%"}, "liveAnimation")
+        .fromTo("#uhlive-v-left", {duration:0.5 , drawSVG:"0"}, {drawSVG:"100%"}, "liveAnimation")
 
         // scale up e
         .from("#uhlive-e", {duration:0.5 , scale:0}, "liveAnimation")
