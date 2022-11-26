@@ -5,11 +5,11 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
 gsap.registerPlugin(GSDevTools, DrawSVGPlugin, MotionPathPlugin);
 
-gsap.set("#clip1", {transformOrigin:"center"});
-
 function swirlAnimation(){
         var tl = gsap.timeline();
-        tl.from("#clip1", {duration:1 , rotate:180})
+
+        tl.from("#outter-line", {duration:1, drawSVG:0})
+        .from("#inner-line", {duration:1, drawSVG:0})
 
         return tl;
 }
