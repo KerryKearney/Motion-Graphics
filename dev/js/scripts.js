@@ -3,8 +3,10 @@ import { GSDevTools } from "gsap/GSDevTools";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+// import MotionPathHelper from "gsap/MotionPathHelper";
 
 gsap.registerPlugin(GSDevTools, DrawSVGPlugin, MotionPathPlugin, MorphSVGPlugin);
+// MotionPathHelper.editPath("#blink-0");
 
 gsap.set("#outter",{transformOrigin:"center"});
 
@@ -36,7 +38,7 @@ function crunchyrollAnimation(){
 function blinkAnimation(){
         var tl = gsap.timeline();
 
-        // tl.to("#outter", {duration:1, morphSVG:"#blink-1"})
+        tl.to("#blink-0", {duration:0.5, morphSVG: {shape: "#blink-1", type:"rotational"}})
         tl.to("#blink-1", {duration:0.5, morphSVG:"#blink-2"})
         tl.to("#blink-2", {duration:0.5, morphSVG:"#blink-3"})
         tl.to("#blink-3", {duration:0.5, morphSVG:"#blink-4"})
