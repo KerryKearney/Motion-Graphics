@@ -38,10 +38,12 @@ function crunchyrollAnimation(){
 function blinkAnimation(){
         var tl = gsap.timeline();
 
-        tl.to("#blink-0", {duration:0.5, morphSVG: {shape: "#blink-1", type:"rotational"}})
-        tl.to("#blink-1", {duration:0.5, morphSVG:"#blink-2"})
-        tl.to("#blink-2", {duration:0.5, morphSVG:"#blink-3"})
-        tl.to("#blink-3", {duration:0.5, morphSVG:"#blink-4"})
+        tl.fromTo("#blink-0", {duration:0.1, alpha:0}, {alpha:1})
+        .fromTo("#outter", {duration:0.1, alpha:1}, {alpha:0})
+        .to("#blink-0", {duration:0.1, morphSVG: {shape: "#blink-1", type:"rotational"}})
+        .to("#blink-0", {duration:0.1, morphSVG:"#blink-2"})
+        .to("#blink-0", {duration:0.1, morphSVG:"#blink-3"})
+        .to("#blink-0", {duration:0.1, morphSVG:"#blink-4"})
 
         return tl;
 }
