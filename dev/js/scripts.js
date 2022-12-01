@@ -38,15 +38,23 @@ function crunchyrollAnimation(){
 function blinkAnimation(){
         var tl = gsap.timeline();
 
-        tl.fromTo("#blink-0", {duration:0.1, alpha:0}, {alpha:1})
-        .fromTo("#outter", {duration:0.1, alpha:1}, {alpha:0})
-        .to("#blink-0", {duration:0.1, morphSVG: {shape: "#blink-1", type:"rotational"}})
-        .to("#blink-0", {duration:0.1, morphSVG:"#blink-2"})
+        tl.fromTo("#blink-0", {duration:0.01, alpha:0}, {alpha:1})
+        .fromTo("#outter", {duration:0.01, alpha:1}, {alpha:0})
+
+        .to("#blink-0", {duration:0.1, morphSVG: {shape: "#blink-1", type:"rotational"}}, "blinkmask-1")
+        .to("#eyemask-1", {duration:0.1, x:50, y:50}, "blinkmask-1")
+
+        .to("#blink-0", {duration:0.1, morphSVG:"#blink-2"}, "blinkmask-2")
+        .to("#eyemask-1", {duration:0.1, x:60, y:95, rotate:3}, "blinkmask-2")
+        .fromto("#eyemask-2", {duration:0.01, alpha:0}, {alpha:1})
+
         .to("#blink-0", {duration:0.1, morphSVG:"#blink-3"})
+
         .to("#blink-0", {duration:0.1, morphSVG:"#blink-4"})
 
         return tl;
 }
+
 
 function sparkleAnimation(){
         var tl = gsap.timeline();
@@ -59,7 +67,11 @@ function sparkleAnimation(){
 function openAnimation(){
         var tl = gsap.timeline();
 
-
+        tl.to("#blink-0", {duration:0.1, morphSVG: {shape: "#blink-4", type:"rotational"}})
+        .to("#blink-0", {duration:0.1, morphSVG:"#blink-3"})
+        .to("#blink-0", {duration:0.1, morphSVG:"#blink-2"})
+        .to("#blink-0", {duration:0.1, morphSVG:"#blink-1"})
+        .to("#blink-0", {duration:0.1, morphSVG:"#blink-0"})
 
         return tl;
 }
