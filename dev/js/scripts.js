@@ -61,7 +61,8 @@ function blinkAnimation(){
 
 function sparkleAnimation(){
         var tl = gsap.timeline();
-
+        tl.from(".sparkle", {stagger:0.125, x:-50, y:50, alpha:0})
+        .to(".sparkle", {stagger:0.125, x:50, y:-50, alpha:0})
 
         return tl;
 }
@@ -94,6 +95,6 @@ mainTL.add(outterAnimation())
 .add(crunchyrollAnimation(), "-=.5")
 .add(blinkAnimation(), "-=1.5")
 .add(sparkleAnimation())
-.add(openAnimation())
+.add(openAnimation(), "-=1.5")
 
 GSDevTools.create();
