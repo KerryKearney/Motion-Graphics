@@ -56,5 +56,7 @@
 <circle id="dot1" cx="402" cy="306" r="15" fill="black"/>
 <circle id="dot2" cx="402" cy="306" r="15" fill="black"/>
 <circle id="dot3" cx="402" cy="306" r="15" fill="black"/>
+<path id="motionpath-2" d="M427.5 203C427.5 182.5 402.292 172.613 386 170C333 161.5 299 180.5 299 235.5" stroke="black"/>
+<path id="motionpath-1" d="M427 280.5V199" stroke="black"/>
 </g>
 </svg>

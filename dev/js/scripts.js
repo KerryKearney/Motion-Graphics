@@ -52,9 +52,10 @@ function liveMotion(){
 
         // lengthen i
         .from("#uhlive-i", {duration:0.5 , drawSVG:"0"}, "liveAnimation")
+        .to("#bubble-I", {duration:0.5, motionPath:{path:"#motionpath-1", align:"#motionpath-1"}, transformOrigin:"center"}, "liveAnimation")
 
         // unfold v
-        .fromTo("#uhlive-v-base", {duration:0.1, alpha:0}, {alpha:1}, "liveAnimation")
+        .fromTo("#uhlive-v-base", {duration:0.01, alpha:0}, {alpha:1}, "liveAnimation")
         .fromTo("#uhlive-v-right", {duration:1 , drawSVG:"0", rotate:-30}, {drawSVG:"100%", rotate:0}, "liveAnimation")
         .fromTo("#uhlive-v-left", {duration:1 , drawSVG:"0", rotate:30}, {drawSVG:"100%", rotate:0}, "liveAnimation")
 
@@ -111,7 +112,28 @@ function subtitleMotion(){
 function uhliveMotion(){
         var tl = gsap.timeline()
 
-        
+        //slide over
+        tl.to("#title", {duration:1, x:100}, "slide")
+
+        // copyright shrinks out
+        .to("#copyright", {duration:0.5, scale:0, transformOrigin:"center"}, "slide")
+
+        // e rolls out
+        .to("#uhlive-e", {duration:1, rotate:45, transformOrigin:"center"}, "slide")
+
+        // v folds out
+
+
+        // I bubble gets bigger
+        .to("#bubble-I", {duration:2, scale:10, fill:"#3ACDED", motionPath:{path:"#motionpath-2", align:"#motionpath-2"}, transformOrigin:"center"}, "slide")
+
+        return tl;
+}
+
+function subtitleFade(){
+        var tl = gsap.timeline()
+
+        tl.to("#subtitle", {duration:0.5, alpha:0})
 
         return tl;
 }
@@ -121,5 +143,6 @@ mainTL.add(uhMotion())
 .add(liveMotion())
 .add(subtitleMotion())
 .add(uhliveMotion())
+.add(subtitleFade())
 
 GSDevTools.create();
