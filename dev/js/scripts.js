@@ -11,6 +11,7 @@ MorphSVGPlugin.convertToPath("circle, rect, ellipse, line, polygon, polyline");
 
 gsap.set("#dot1", {transformOrigin: "center"});
 gsap.set("#dot2", {transformOrigin: "center"});
+gsap.set("#dot3", {transformOrigin: "center"});
 gsap.set("#bubble-L", {transformOrigin: "center"});
 gsap.set("#uhlive-e", {transformOrigin: "center"});
 gsap.set("#uhlive-v-left", {transformOrigin:"right bottom"});
@@ -52,6 +53,7 @@ function liveMotion(){
 
         // lengthen i
         .from("#uhlive-i", {duration:0.5 , drawSVG:"0"}, "liveAnimation")
+        .from("#bubble-I", {alpha:0})
         .to("#bubble-I", {duration:0.5, motionPath:{path:"#motionpath-1", align:"#motionpath-1"}, transformOrigin:"center"}, "liveAnimation")
 
         // unfold v
@@ -119,12 +121,15 @@ function uhliveMotion(){
         .to("#copyright", {duration:0.5, scale:0, transformOrigin:"center"}, "slide")
 
         // e rolls out
-        .to("#uhlive-e", {duration:1, rotate:45, transformOrigin:"center"}, "slide")
+        .to("#uhlive-e", {duration:0.5, rotate:45, x:200, alpha:0, transformOrigin:"center"}, "slide")
 
-        // v folds out
-
+        // v folds up
+        .to("#uhlive-v-base", {duration:0.01, alpha:0}, {alpha:1}, "fold")
+        .to("#uhlive-v-right", {duration:1 , drawSVG:"0", rotate:-30}, {drawSVG:"100%", rotate:0}, "fold")
+        .to("#uhlive-v-left", {duration:1 , drawSVG:"0", rotate:30}, {drawSVG:"100%", rotate:0}, "fold")
 
         // I bubble gets bigger
+        .to("#uhlive-i", {duration:0.5, drawSVG:0}, "slide")
         .to("#bubble-I", {duration:2, scale:10, fill:"#3ACDED", motionPath:{path:"#motionpath-2", align:"#motionpath-2"}, transformOrigin:"center"}, "slide")
 
         return tl;
@@ -143,6 +148,6 @@ mainTL.add(uhMotion())
 .add(liveMotion())
 .add(subtitleMotion())
 .add(uhliveMotion())
-.add(subtitleFade())
+.add(subtitleFade(), "-=1.5")
 
 GSDevTools.create();
